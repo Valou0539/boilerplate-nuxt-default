@@ -6,7 +6,7 @@
 
 @layer components {
     .bg-desert {
-        background-image: radial-gradient(circle, #00000044 0%, transparent 100%), url('../img/desert.webp');
+        background-image: radial-gradient(circle, #00000044 0%, transparent 100%), url('../img/desert.webp'), linear-gradient( #f39640, #C9212B);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
