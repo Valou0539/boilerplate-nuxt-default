@@ -42,8 +42,8 @@
             type="password"
             id="signup-password"
             name="password"
-            class="w-full px-2 py-1 border-none bg-text/10 mb-4"
-            placeholder="﹡﹡﹡﹡﹡﹡"
+            class="w-full px-2 py-1 border-none bg-text/10 mb-4 tracking-wider"
+            placeholder="••••••"
             autocomplete="new-password"
             :tabindex="login ? -1 : 0"
         />
@@ -54,8 +54,8 @@
             type="password"
             id="signup-password-confirm"
             name="password-confirm"
-            class="w-full px-2 py-1 border-none bg-text/10 mb-10"
-            placeholder="﹡﹡﹡﹡﹡﹡"
+            class="w-full px-2 py-1 border-none bg-text/10 mb-10 tracking-wider"
+            placeholder="••••••"
             autocomplete="new-password"
             :tabindex="login ? -1 : 0"
         />
@@ -81,7 +81,7 @@
 
         <button
             type="submit"
-            class="bg-primary-btn text-primary-btn-text px-4 py-2 w-full text-lg font-medium"
+            class="bg-primary-btn text-primary-btn-text px-4 py-2 w-full text-lg font-medium hover:translate-y-[-2px] hover:shadow-lg hover:shadow-primary-btn/20 transition-all duration-200"
             :tabindex="login ? -1 : 0"
         >
           Sign Up
@@ -114,8 +114,8 @@
             type="password"
             id="login-password"
             name="password"
-            class="w-full px-2 py-1 border-none bg-text/10 mb-10"
-            placeholder="﹡﹡﹡﹡﹡﹡"
+            class="w-full px-2 py-1 border-none bg-text/10 mb-10 tracking-wider"
+            placeholder="••••••"
             autocomplete="current-password"
             :tabindex="login ? 0 : -1"
         />
@@ -130,7 +130,7 @@
                 class="w-6 h-6 block opacity-0 peer"
                 :tabindex="login ? 0 : -1"
             >
-            <div class="absolute top-0 left-0 w-full h-full border border-text pointer-events-none peer-focus-visible:outline peer-focus-visible:outline-1 peer-focus-visible:outline-text"></div>
+            <div class="absolute top-0 left-0 w-full h-full border border-text pointer-events-none peer-focus-visible:outline peer-focus-visible:outline-1 peer-focus-visible:outline-text peer-active:outline peer-active:outline-1 peer-active:outline-text"></div>
             <div class="absolute right-1/2 translate-x-1/2 bottom-1/2 translate-y-1/2 w-4 h-4 bg-text pointer-events-none scale-0 peer-checked:scale-100 transition-all duration-200"></div>
           </div>
           <label for="stay-connected" class="text-sm">Stay connected</label>
@@ -138,7 +138,7 @@
 
         <button
             type="submit"
-            class="bg-primary-btn text-primary-btn-text px-4 py-2 w-full text-lg font-medium"
+            class="bg-primary-btn text-primary-btn-text px-4 py-2 w-full text-lg font-medium hover:translate-y-[-2px] hover:shadow-lg hover:shadow-primary-btn/20 transition-all duration-200"
             :tabindex="login ? 0 : -1"
         >
           Log In
@@ -147,10 +147,10 @@
 
       <a
           :href="login ? '#signup' : '#login'"
-          class="flex md:hidden gap-0.5 items-center leading-none px-3 py-2 bg-secondary-btn text-secondary-btn-text ml-auto"
+          class="flex md:hidden gap-0.5 items-center leading-none px-3 py-2 bg-secondary-btn text-secondary-btn-text ml-auto group"
       >
         {{ login ? "First time here" : "Already have an account" }}
-        <Icon name="octicon:chevron-right-12" size="12px" class="mt-0.5" />
+        <Icon name="octicon:chevron-right-12" size="12px" class="mt-0.5 group-hover:translate-x-0.5 transition-transform duration-200" />
       </a>
 
       <div
@@ -164,11 +164,11 @@
           <em class="font-heading leading-tight text-[84px] not-italic">Welcome Back</em>
           <a
               href="#signup"
-              class="absolute bottom-2 right-2 flex gap-0.5 items-center leading-none px-3 py-2 bg-secondary-btn text-secondary-btn-text ml-auto"
+              class="absolute bottom-2 right-2 flex gap-0.5 items-center leading-none px-3 py-2 bg-secondary-btn text-secondary-btn-text ml-auto group"
               :tabindex="login ? 1 : -1"
           >
             First time here
-            <Icon name="octicon:chevron-right-12" size="12px" class="mt-0.5" />
+            <Icon name="octicon:chevron-right-12" size="12px" class="mt-0.5 group-hover:translate-x-0.5 transition-transform duration-200" />
           </a>
         </div>
         <div
@@ -181,11 +181,11 @@
           </div>
           <a
               href="#login"
-              class="absolute bottom-2 right-2 flex gap-0.5 items-center leading-none px-3 py-2 bg-secondary-btn text-secondary-btn-text ml-auto"
+              class="absolute bottom-2 right-2 flex gap-0.5 items-center leading-none px-3 py-2 bg-secondary-btn text-secondary-btn-text ml-auto group"
               :tabindex="login ? -1 : 0"
           >
             Already have an account
-            <Icon name="octicon:chevron-right-12" size="12px" class="mt-0.5" />
+            <Icon name="octicon:chevron-right-12" size="12px" class="mt-0.5 group-hover:translate-x-0.5 transition-transform duration-200" />
           </a>
         </div>
       </div>
