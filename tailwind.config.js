@@ -11,21 +11,21 @@ export default {
   theme: {
     extend: {
         colors: {
-          'text': '#FFFFFF',
-          'bg': '#0B010F',
-          'accent': '#DE88F9',
+          'text': '',
+          'bg': '',
+          'accent': '',
           'primary-btn': {
-            DEFAULT: '#D88C31',
-            'text': '#000000'
+            DEFAULT: '',
+            'text': ''
           },
           'secondary-btn': {
-            DEFAULT: '#020024',
-            'text': '#FFFFFF'
+            DEFAULT: '',
+            'text': ''
           }
         },
         fontFamily: {
-          'body': ['Noto Sans', 'sans-serif'],
-          'heading': ['Bebas Neue', 'sans-serif']
+          'body': ['', 'sans-serif'],
+          'heading': ['', 'sans-serif']
         }
     },
   },

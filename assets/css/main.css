@@ -1,17 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans:wght@400;500&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@layer components {
-    .bg-desert {
-        background-image: radial-gradient(circle, #00000044 0%, transparent 100%), url('../img/desert.webp'), linear-gradient( #f39640, #C9212B);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-}
 
 html, body {
     @apply max-w-full scroll-smooth;
@@ -19,8 +8,4 @@ html, body {
 
 body {
     @apply bg-bg text-text font-body;
-}
-
-input {
-    color-scheme: only dark;
 }
